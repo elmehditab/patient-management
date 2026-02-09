@@ -105,16 +105,16 @@ cd integration-tests && mvn test
 From what I learned a microservice architecture helps scale applications by splitting multiples independent services.
 Each services can be deployed and scaled based on its own need.  
 In microservices architecture, an API Gateway is used as a single entry point to route requests to backend services.  
-It can also helps secure API route using filtering that validates JWT tokens.
+It can also help secure API route using filtering that validates JWT tokens.
 
 For synchronous service-to-service communications gRPC uses protocol buffers. 
 The contract of the request and the response is already specified on the .proto files.  
 gRPC is faster and more efficient than REST for internal communication because it uses binary serialization and HTTP/2.
 For client to server communication REST is still used ( I've heard about webRPC, I think it's a way to have faster client-server communication using protobuf..)
 
-For asynchronous communications, for example in an analytics system that process large number of events at the same time we can use a message broker like Apache Kafka.  
-Events a produced by a producers and published into topics.
-Consumers suscribe to these topics and also we can group them into a consumer group to process events in parallel. Kafka stores events durably in an ordered log within each partition using offset, allowing high throughput, scalability and fault tolerance.
+For asynchronous communications, for example in an analytics system that processes large numbers of events at the same time we can use a message broker like Apache Kafka.  
+Events are produced by a producer and published into topics.
+Consumers subscribe to these topics and we can also group them into a consumer group to process events in parallel. Kafka stores events durably in an ordered log within each partition using offset, allowing high throughput, scalability and fault tolerance.
   
 
 
