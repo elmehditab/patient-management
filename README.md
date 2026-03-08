@@ -2,13 +2,15 @@
 
 Microservices-based patient management system (Spring Boot) with API Gateway, JWT auth, gRPC, and Kafka.
 
+<img width="1457" height="716" alt="image" src="https://github.com/user-attachments/assets/102e3e13-846a-4e05-bd6b-d2ac16a50071" />
+
+
 ## Overview
 - API Gateway centralizes HTTP traffic and applies JWT validation.
 - Auth Service handles authentication and token validation.
 - Patient Service exposes patient CRUD, creates billing accounts via gRPC, and publishes Kafka events.
 - Billing Service exposes a gRPC service for account creation.
 - Analytics Service consumes Kafka events for analytics.
-  <img width="1457" height="716" alt="image" src="https://github.com/user-attachments/assets/55b5d862-94ad-4f12-8a15-c1b0c40ee543" />
 
 
 ## Docker environment variables
