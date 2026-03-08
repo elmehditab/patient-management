@@ -8,9 +8,12 @@ Microservices-based patient management system (Spring Boot) with API Gateway, JW
 - Patient Service exposes patient CRUD, creates billing accounts via gRPC, and publishes Kafka events.
 - Billing Service exposes a gRPC service for account creation.
 - Analytics Service consumes Kafka events for analytics.
+  <img width="1457" height="716" alt="image" src="https://github.com/user-attachments/assets/55b5d862-94ad-4f12-8a15-c1b0c40ee543" />
+
 
 ## Docker environment variables
 Below is the set of environment variables used for containerized runs (per service).
+
 
 Auth Service
 ```env
